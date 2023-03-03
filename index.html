@@ -4,20 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portifolio</title>
+  <title>Portfólio</title>
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
   <header class="header">
-    <a href="#" class="logo">Portifolio</a>
+    <a href="#" class="logo">Portfólio</a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
 
     <nav class="navbar">
-      <a href="#" style="--i:1;" class="active">Home</a>
-      <a href="#" style="--i:2;" >About</a>
-      <a href="#" style="--i:3;" >Contact</a>
-      <a href="#" style="--i:4;" >Skills</a>
-      <a href="#" style="--i:5;" >Portifolio</a>
+      <a href="#home" style="--i:1;" class="active">Home</a>
+      <a href="#about" style="--i:2;" >About</a>
+      <a href="#skills" style="--i:4;" >Skills</a>
+      <a href="#portifolio" style="--i:5;" >Portifolio</a>
+      <a href="#contact" style="--i:3;" >Contact</a>
     </nav>
   </header>
     <section class="home">
@@ -41,6 +43,83 @@
         <img src="./assets/studying.png" alt="" srcset="">
       </div>
     </div>
+    </section>
+
+    <section class="about">
+      <div class="about-img" id="img-about">
+        <img src="./assets/laptop wave.png" alt="">
+      </div>
+     <div class="about-content">
+      <h2 class="heading">
+        About <span>me</span>
+      </h2>
+      <h3>Frontend Developer</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi illo velit nihil facilis sit sed molestias, iure laboriosam ipsam, ex maxime ad rerum aspernatur hic dolorem dolores sequi maiores. Explicabo excepturi natus pariatur maiores tempore, ullam porro? Cum ut libero quod commodi nemo ipsum quis recusandae..</p>
+      <a href="#" class="btn">Read More</a>
+     </div>
+     
+    </section>
+
+    <section class="skills" id="skills">
+      <h2 class="heading">Our <span>Skills</span></h2>
+      <div class="skills-container">
+        <div class="skills-box">
+        
+        <i class='bx bx-expand-horizontal'></i>
+        <h3>Web Desing</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nobis obcaecati mollitia animi repellat nulla, autem nihil alias aut ullam expedita molestias.</p>
+        <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="skills-box">
+        <i class='bx bxs-data'></i>
+        <h3>DataBase</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nobis obcaecati mollitia animi repellat nulla, autem nihil alias aut ullam expedita molestias.</p>
+        <a href="#" class="btn">Read more</a>
+        </div>
+
+        <div class="skills-box">
+        <i class='bx bx-code-alt'></i>
+        <h3>Outros</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nobis obcaecati mollitia animi repellat nulla, autem nihil alias aut ullam expedita molestias.</p>
+        <a href="#" class="btn">Read more</a>
+        </div>
+      </div>
+      
+      
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Meus <span>Projetos</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="./assets/nlweasports.png" alt="" srcset="">
+          <div class="portfolio-layer">
+            <h4>Web Desing</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic earum quis placeat harum.</p>
+            <a href="#" ><i class='bx bx-link-external' ></i></a>
+          </div>
+        </div>
+
+         <div class="portfolio-box">
+          <img src="./assets/palavra secreta.png" alt="" srcset="">
+          <div class="portfolio-layer">
+            <h4>Web Desing</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic earum quis placeat harum.</p>
+            <a href="#" ><i class='bx bx-link-external' ></i></a>
+          </div>
+        </div>
+
+         <div class="portfolio-box">
+          <img src="./assets/jogo da velha.png" alt="" srcset="">
+          <div class="portfolio-layer">
+            <h4>Web Desing</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic earum quis placeat harum.</p>
+            <a href="#" ><i class='bx bx-link-external' ></i></a>
+          </div>
+        </div>
+      </div>
+
     </section>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="script.jsx"></script>

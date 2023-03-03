@@ -15,18 +15,30 @@
 --sc: #fff;
 --tc: #0ef;
 --bg: #323946;
+--changecolor: rgb(211, 15, 89);
 }
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
 body {
 background-color: var(--maincolor);
 color: var(--sc);
 }
 
+section {
+min-height: 100vh;
+padding: 10rem 9% 2rem;
+}
+
 .header {
   position: fixed;
-  top: 0;
+  top: 0; 
   left: 0;
   width: 100%;
-  padding: 1.25rem 10%;
+  padding: 2rem 9%;
   background: var(--bg);
   display: flex;
   justify-content: space-between;
@@ -36,9 +48,8 @@ color: var(--sc);
 }
 
 .logo {
-  font-size: 1.5625rem;
+  font-size: 2.5rem;
   color: var(--sc);
-  text-decoration: none;
   font-weight: 600;
   cursor: default;
   opacity: 0;
@@ -47,36 +58,38 @@ color: var(--sc);
 
 .navbar a{
 display: inline-block;
-font-size: 1.125rem;
-text-decoration: none;
-margin-left: 2.1875rem;
+font-size: 1.7rem;
+margin-left: 4rem;
 color: var(--sc);
-font-weight: 500;
 transition: .3s;
 opacity: 0;
 animation: slideTop .5s ease forwards;
 animation-delay: calc(.2s * var(--i));
 }
 
-.navbar a:hover, .navbar a.active {
+.navbar a:hover,
+.navbar a.active {
   color: var(--tc);
 }
 
-.home{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-padding: 4.375rem 10% 0;
-}
-.home-content {
-  max-width: 37.5rem;
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--sc);
+  display: none;
 }
 
+/* section home  */
+
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .home-content h3 {
-  font-size: 2rem;
+  font-size: 3.2rem;
   font-weight: 700;
   opacity: 0;
   animation: slideBottom 1s ease forwards;
@@ -84,25 +97,25 @@ padding: 4.375rem 10% 0;
 }
 
 .home-content h1{
-  font-size: 3.5rem;
+  font-size: 5.6rem;
   font-weight: 700;
-  margin: -0.1875rem 0;
+  line-height: 1.3;
   opacity: 0;
   animation: slideRight 1s ease forwards;
   animation-delay: 1s;
 }
-.home-content h3 span{
+span{
   color: var(--tc);
 }
 .home-content h3:nth-of-type(2){
-  margin-bottom: 1.875rem;
+  margin-bottom: 2rem;
   animation: slideTop 1s ease forwards;
   animation-delay: .7s;
 }
 
 
 .home-img img{
-  max-width: 21.875rem;
+  max-width: 35vh;
    transition: .3s;
    border-bottom: var(--tc) solid 0.3125rem;
    border-radius: 50%;
@@ -115,13 +128,12 @@ padding: 4.375rem 10% 0;
   transform: scale(1.06);
   border-top: var(--tc) solid 0.3125rem;
   border-radius: 50%;
-  /* border-bottom: none; */
   transition: .3s;
   box-shadow: 0 0 1.25rem var(--tc);
 }
 
 .home-content p {
-  font-size: 1rem;
+  font-size: 1.6rem;
   opacity: 0;
   animation: slideLeft 1s ease forwards;
   animation-delay: .7s;
@@ -131,16 +143,16 @@ padding: 4.375rem 10% 0;
 display: inline-flex;
 justify-content: center;
 align-items: center;
-width: 2.5rem;
-height: 2.5rem;
+width: 4rem;
+height: 4rem;
 background-color: transparent;
-border: 0.125rem solid var(--tc);
+border: 0.2rem solid var(--tc);
 border-radius: 50%;
-font-size: 1.25rem;
+font-size: 2rem;
 color: var(--tc);
 text-decoration: none;
-transition: .3s;
-margin: 1.875rem 0.9375rem 1.875rem 0;
+transition: .3s ease;
+margin: 3rem 1.5rem 3rem 0;
 opacity: 0;
 animation: slideLeft 1s ease forwards;
 animation-delay: calc(.2s * var(--i))
@@ -154,23 +166,182 @@ animation-delay: calc(.2s * var(--i))
 
 .btn {
   display: inline-block;
-  padding: 0.75rem 1.125rem;
+  padding: 1rem 2.8rem;
   background: var(--tc);
-  border-radius: 2.5rem;
-  box-shadow: 0 0 0.625rem var(--tc);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--tc);
   text-decoration: none;
   font-weight: 600;
   color: var(--maincolor);
   opacity: 0;
   animation: slideTop 1s ease forwards;
   animation-delay: .2s;
-  transition: .3s;
+  transition: .3s ease;
+  letter-spacing: .1rem;
+  
 }
 
 .btn:hover {
   background-color: var(--maincolor);
   color: var(--tc);
 }
+/* css aboout */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--bg);
+}
+
+#img-about img {
+   max-width: 35vh;
+   transition: .3s;
+   border-bottom: var(--tc) solid 0.3125rem;
+   border-radius: 50%;
+   animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+   animation-delay: .2s;
+   transition: .3s;
+}
+#img-about img:hover {
+ transform: scale(1.06);
+  border-top: var(--tc) solid 0.3125rem;
+  border-radius: 50%;
+  transition: .3s;
+  box-shadow: 0 0 1.25rem var(--tc);
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.about-content h2 {
+text-align: left;
+line-height: 1.2;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+.about-content p {
+font-size: 1.6rem;
+margin: 2rem 0 3rem;
+}
+/* css service */
+
+.skills h2 {
+margin-bottom: 5rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  
+}
+
+.skills-container .skills-box{
+  flex: 1 1 30rem;
+  background: var(--bg);
+  padding: 3rem 2rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: .2rem solid var(--maincolor);
+  transition: .5s ease;
+}
+.skills-container .skills-box:hover{
+  border-color: var(--tc);
+  transform: scale(1.02);
+}
+
+.skills-box i {
+  font-size: 7rem;
+  color: var(--tc);
+}
+
+.skills-box h3 {
+  font-size: 2.6rem;
+}
+
+.skills-box p {
+  font-size : 1.6rem;
+  margin: 1rem 0 3rem;
+}
+
+
+/* portfolio css */
+.portfolio {
+background: var(--bg);
+}
+
+.portifolio h2 {
+  margin-bottom: 4rem;
+}
+
+.portfolio-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+align-items: center;
+gap: 2.5rem;
+}
+
+.portfolio-container .portfolio-box{
+position: relative;
+border-radius: 2rem;
+box-shadow: 0 0 1rem var(--maincolor);
+overflow: hidden;
+display: flex;
+}
+
+.portfolio-box img{
+width: 100%;
+}
+
+.portfolio-box .portfolio-layer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0, .6), var(--tc));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+}
+
+.portfolio-layer h4 {
+  font-size: 3rem;
+}
+
+.portfolio-layer p {
+  font-size: 1.6rem;
+  margin: .3rem 0 1rem;
+}
+
+.portfolio-layer a{
+display: inline-flex;
+justify-content: center;
+align-items: center;
+width: 5rem;
+height: 5rem;
+background: var(--sc);
+border-radius: 50%;
+}
+
+.portfolio-layer a i {
+  font-size: 2rem;
+  color: var(--bg);
+}
+
+
+
 
 /* KEY FRAMES ANIMATIONS */
 

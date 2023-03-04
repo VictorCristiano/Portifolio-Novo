@@ -392,8 +392,40 @@ margin: .7rem 0;
 
 .contact form .btn {
   margin-top: 2rem;
-  cursor: pointer;
+  cursor: pointerord;
 }
+
+.footer{
+display: flex ;
+justify-content: space-between;
+align-items: center;
+padding: 2rem 9%;
+flex-wrap: wrap;
+}
+
+.footer-text p{
+  font-size: 1.2rem;
+}
+
+.icone-irtopo a{
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  border-radius: 50%;
+  background: var(--tc);
+  transition: .5s ease;
+}
+.icone-irtopo a:hover{
+box-shadow: 0 0 1rem var(--tc);
+}
+
+.icone-irtopo a i {
+  font-size: 1.6rem;
+  color: var(--bg);
+}
+
 
 
 /* KEY FRAMES ANIMATIONS */

@@ -15,14 +15,14 @@
     <i class='bx bx-menu' id="menu-icon"></i>
 
     <nav class="navbar">
-      <a href="#home" style="--i:1;" class="active">Home</a>
-      <a href="#about" style="--i:2;" >About</a>
+      <a href="#home" style="--i:1;" class="active">Inicio</a>
+      <a href="#about" style="--i:2;" >Sobre Mim</a>
       <a href="#skills" style="--i:4;" >Skills</a>
-      <a href="#portifolio" style="--i:5;" >Portifolio</a>
-      <a href="#contact" style="--i:3;" >Contact</a>
+      <a href="#portfolio" style="--i:5;" >Portifolio</a>
+      <a href="#contact" style="--i:3;" >Contato</a>
     </nav>
   </header>
-    <section class="home">
+    <section class="home" id="home">
       <div class="home-content">
         <h3>Oi , eu sou</h3>
         <h1>Victor Cristiano</h1>
@@ -45,15 +45,15 @@
     </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
       <div class="about-img" id="img-about">
         <img src="./assets/laptop wave.png" alt="">
       </div>
      <div class="about-content">
       <h2 class="heading">
-        About <span>me</span>
+        Sobre <span>mim</span>
       </h2>
-      <h3>Frontend Developer</h3>
+      <h3>Frontend Developer!</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi illo velit nihil facilis sit sed molestias, iure laboriosam ipsam, ex maxime ad rerum aspernatur hic dolorem dolores sequi maiores. Explicabo excepturi natus pariatur maiores tempore, ullam porro? Cum ut libero quod commodi nemo ipsum quis recusandae..</p>
       <a href="#" class="btn">Read More</a>
      </div>
@@ -61,27 +61,27 @@
     </section>
 
     <section class="skills" id="skills">
-      <h2 class="heading">Our <span>Skills</span></h2>
+      <h2 class="heading">Minhas <span>Skills</span></h2>
       <div class="skills-container">
         <div class="skills-box">
         
         <i class='bx bx-expand-horizontal'></i>
         <h3>Web Desing</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nobis obcaecati mollitia animi repellat nulla, autem nihil alias aut ullam expedita molestias.</p>
+        <p>Conhecimentos em WebDesing, usando como padrão linguagem JavaScript, linguagem de marcação HTML, e estilização em CSS, atualmente estudando React.</p>
         <a href="#" class="btn">Read more</a>
         </div>
 
         <div class="skills-box">
         <i class='bx bxs-data'></i>
         <h3>DataBase</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nobis obcaecati mollitia animi repellat nulla, autem nihil alias aut ullam expedita molestias.</p>
+        <p>Em relação a banco de dados, tenho conhecimento básico em SQL, e recentemente adquiri e estou realizando um curso de MySql para aprimorar meus conhecimentos.</p>
         <a href="#" class="btn">Read more</a>
         </div>
 
         <div class="skills-box">
         <i class='bx bx-code-alt'></i>
         <h3>Outros</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nobis obcaecati mollitia animi repellat nulla, autem nihil alias aut ullam expedita molestias.</p>
+        <p>Usando outras tecnologias, tenho curso de sofwtare de versionamento GIT e GitHub, finalizando um curso de Cloud Computing, conhecimentos básicos em Linux e hardware.</p>
         <a href="#" class="btn">Read more</a>
         </div>
       </div>
@@ -119,6 +119,22 @@
           </div>
         </div>
       </div>
+
+      <section class="contact" id="contact">
+        <h2 class="heading">Me <span>Contate</span></h2>
+        <form action="#" onsubmit="event.preventDefault(e)">
+          <div class="input-box">
+            <input type="text" placeholder="Nome Completo">
+            <input type="email" placeholder="Endereço de email">
+          </div>
+          <div class="input-box">
+            <input type="number" inputmode="numeric" placeholder="Número de telefone">
+            <input type="text" placeholder="Assunto do Email">
+          </div>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Deixe sua mensagem"></textarea>
+          <input type="submit" value="Send Message" class="btn" >
+        </form>
+      </section>
 
     </section>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>

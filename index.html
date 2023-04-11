@@ -7,6 +7,8 @@
   <title>Portfólio</title>
   <link rel="stylesheet" href="style.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
 </head>
 <body>
   <header class="header">
@@ -15,11 +17,11 @@
     <i class='bx bx-menu' id="menu-icon"></i>
 
     <nav class="navbar">
-      <a href="#home" style="--i:1;" class="active">Inicio</a>
-      <a href="#about" style="--i:2;" >Sobre Mim</a>
-      <a href="#skills" style="--i:4;" >Skills</a>
-      <a href="#portfolio" style="--i:5;" >Portifolio</a>
-      <a href="#contact" style="--i:3;" >Contato</a>
+      <a href="#home" style="--i:1;" class="">Inicio</a>
+      <a href="#about" style="--i:2;" class="">Sobre Mim</a>
+      <a href="#skills" style="--i:4;" class="">Skills</a>
+      <a href="#portfolio" style="--i:5;" class="">Portifolio</a>
+      <a href="#comments" style="--i:3;" class="">Comentários</a>
     </nav>
   </header>
     <section class="home" id="home">
@@ -29,7 +31,7 @@
         <h3>E sou um  <span class="multiple-text"></span>
         </h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem est nam quisquam corrupti laboriosam doloribus suscipit reprehenderit quos dolores quo esse rem laudantium praesentium fugiat dolorem et, fugit laborum.
+          E este é meu portfólio , aqui você vai poder conhecer um pouco mais sobre mim, e sobre alguns de meus projetos de estudo. 
         </p>
         <div class="social-media">
           <a target="_blank" href="https://www.linkedin.com/in/victor-cristiano-49349b23a/" style="--i:6"><i class='bx bxl-linkedin' ></i></box-icon></a>
@@ -54,8 +56,9 @@
         Sobre <span>mim</span>
       </h2>
       <h3>Frontend Developer!</h3>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi illo velit nihil facilis sit sed molestias, iure laboriosam ipsam, ex maxime ad rerum aspernatur hic dolorem dolores sequi maiores. Explicabo excepturi natus pariatur maiores tempore, ullam porro? Cum ut libero quod commodi nemo ipsum quis recusandae..</p>
-      <a href="#" class="btn">Read More</a>
+      <p> Apaixonado por tecnologias e novas descobertas, estou em transição de carreira e buscando minha primeira oportunidade na área, atualmente cursando Análise e Desenvolvimento de Sistemas, e realizando alguns cursos por fora da faculdade, buscando me aprimorar cada vez mais.</p>
+     <p>Este é um Portfólio que fiz para treinar um pouco das tecnologias de estudo,, pretendo atualizar e aprimorar de acordo com novos aprendizados.</p>
+      
      </div>
      
     </section>
@@ -68,25 +71,20 @@
         <i class='bx bx-expand-horizontal'></i>
         <h3>Web Desing</h3>
         <p>Conhecimentos em WebDesing, usando como padrão linguagem JavaScript, linguagem de marcação HTML, e estilização em CSS, atualmente estudando React.</p>
-        <a href="#" class="btn">Read more</a>
+        <i class="devicon-javascript-plain"></i><i class="devicon-html5-plain"></i><i class="devicon-css3-plain"></i><i class="devicon-react-plain"></i>
         </div>
-
         <div class="skills-box">
         <i class='bx bxs-data'></i>
         <h3>DataBase</h3>
         <p>Em relação a banco de dados, tenho conhecimento básico em SQL, e recentemente adquiri e estou realizando um curso de MySql para aprimorar meus conhecimentos.</p>
-        <a href="#" class="btn">Read more</a>
+        <i class="devicon-mysql-plain-wordmark"></i><i class="devicon-sql"></i>
         </div>
-
-        <div class="skills-box">
-        <i class='bx bx-code-alt'></i>
+        <div class="skills-box"><i class='bx bx-code-alt'></i>
         <h3>Outros</h3>
-        <p>Usando outras tecnologias, tenho curso de sofwtare de versionamento GIT e GitHub, finalizando um curso de Cloud Computing, conhecimentos básicos em Linux e hardware.</p>
-        <a href="#" class="btn">Read more</a>
+        <p>Usando outras tecnologias, tenho curso de verrsionamento GIT e GitHub, finalizando um curso de Cloud Computing, conhecimentos básicos em Linux e hardware.</p>
+        <i class='bx bxl-git' ></i><i class='bx bxl-github'></i><i class='bx bx-cloud'></i>
         </div>
       </div>
-      
-      
     </section>
 
     <section class="portfolio" id="portfolio">
@@ -97,7 +95,7 @@
           <div class="portfolio-layer">
             <h4>NLW EASports</h4>
             <p>Esta é um landing page, de um projeto realizado junto a RocketSeat.</p>
-            <a href="#" ><i class='bx bx-link-external' ></i></a>
+            <a target="_blank" href="https://victorcristiano.github.io/NLW-ESports/" ><i class='bx bx-link-external'></i></a>
           </div>
         </div>
 
@@ -115,27 +113,27 @@
           <div class="portfolio-layer">
             <h4>JogoDaVelha</h4>
             <p>meu primeiro projeto na linguagem, fiz junto a uma aula de JS, implentei dark-mode para testar.</p>
-            <a href="#" ><i class='bx bx-link-external' ></i></a>
+            <a target="_blank" href="https://victorcristiano.github.io/Jogo-da-Velha/" ><i class='bx bx-link-external' ></i></a>
           </div>
         </div>
       </div>
+    </section>
 
-      <section class="contact" id="contact">
-        <h2 class="heading">Me <span>Contate</span></h2>
-        <form action="#" onsubmit="event.preventDefault(e)">
+      <section class="comments" id="comments">
+        <h2 class="heading">Comente<span> aqui!</span></h2>
+        <form action="#" id="formulario">
           <div class="input-box">
-            <input type="text" placeholder="Nome Completo">
-            <input type="email" placeholder="Endereço de email">
+            <input type="text" name="name" id="inputName" placeholder="Digite seu nome" required>
+            <textarea name="" id="inputComment" cols="10" rows="10" placeholder="Deixe aqui seu comentário, crítica ou sugestão." required></textarea>
+            <button type="submit" class="btn" onsubmit="event.preventDefault(e)">Enviar Comentário</button>
           </div>
-          <div class="input-box">
-            <input type="number" inputmode="numeric" placeholder="Número de telefone">
-            <input type="text" placeholder="Assunto do Email">
-          </div>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Deixe sua mensagem"></textarea>
-          <input type="submit" value="Send Message" class="btn" >
         </form>
+        <div class="postComments" id="postComments">
+            <h2 class="heading">Comentários</h2>
+      </div>
       </section>
-      <footer class="footer">
+      
+    <footer class="footer">
         <div class="footer-text">
           <p>Copyrigth &copy; 2023 by Victor Cristiano | Inspiração de projeto base Codehal </p>
         </div>
@@ -143,7 +141,6 @@
             <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
       </footer>
-    </section>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="script.jsx"></script>
 </body>

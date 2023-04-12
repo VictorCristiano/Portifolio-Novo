@@ -69,7 +69,9 @@ header.sticky {
   animation: slideTop 0.5s ease forwards;
   animation-delay: calc(0.2s * var(--i));
 }
-
+.active{
+  color: var(--tc);
+}
 .navbar a:hover,
 .navbar a .active {
   color: var(--tc);
@@ -79,6 +81,7 @@ header.sticky {
   font-size: 3.6rem;
   color: var(--sc);
   display: none;
+  cursor: pointer;
 }
 
 /* section home  */
@@ -562,9 +565,6 @@ span {
     align-content: center;
     overflow: hidden;
   }
-  .portfolio-container{
-
-  }
 
 
   .footer {
@@ -580,17 +580,23 @@ span {
   .navbar {
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 50%;
     padding: 1rem 3%;
     background-color: var(--bg);
-    border-top: 0.1rem;
     box-shadow: 0 0.5s 1rem;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateX(100%);
+    transition: .5s ease-in;
   }
-
+  .navbar.active {
+    transform: translateX(0);
+  }
   .navbar a {
     display: block;
     font-size: 2rem;

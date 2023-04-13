@@ -386,6 +386,17 @@ span {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+input:focus-within{
+  border: solid 1px var(--tc);
+  transition: .5s ease-in;
+  box-shadow: 0 0 1rem var(--tc);
+}
+textarea:focus-within{
+  transition: .5s ease-in;
+  box-shadow: 0 0 1rem var(--tc);
+  border: solid 1px var(--tc);
+}
 .comments form textarea {
   max-height: 10rem;
 }
@@ -422,14 +433,21 @@ span {
 }
 
 .postComments p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   width: 100%;
+  font-weight: 500;
   background-color: var(--maincolor);
   padding: 2rem 2rem 2rem;
   text-align: left;
   text-transform: uppercase;
   margin: 1rem;
   border-radius: 1.5rem;
+  font-family: Verdana, sans-serif;
+}
+
+.postComments span {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .footer {
@@ -443,16 +461,21 @@ span {
 .footer-text p {
   font-size: 1.2rem;
 }
-
+.icone-irtopo{
+  display: flex;
+  justify-content: right;
+  margin:  0 5rem;
+  transform: translateY(-50%);
+}
 .icone-irtopo a {
-  display: inline-flex;
-
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.8rem;
   border-radius: 50%;
   background: var(--tc);
   transition: 0.5s ease;
+
 }
 .icone-irtopo a:hover {
   box-shadow: 0 0 1rem var(--tc);
@@ -593,6 +616,7 @@ span {
     align-items: center;
     transform: translateX(100%);
     transition: .5s ease-in;
+    border-radius: 3px;
   }
   .navbar.active {
     transform: translateX(0);

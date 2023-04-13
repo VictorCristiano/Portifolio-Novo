@@ -15,7 +15,7 @@ const postComments = document.getElementById("postComments");
 form.addEventListener('submit', (event)=>{
   event.preventDefault()
   let p = document.createElement('p');
-  p.innerHTML = `<strong>${inputName.value}: </strong> &nbsp ${inputComment.value}`;
+  p.innerHTML = `<span>${inputName.value}: </span> &nbsp ${inputComment.value}`;
   postComments.appendChild(p);
   inputName.value = '';
   inputComment.value='';

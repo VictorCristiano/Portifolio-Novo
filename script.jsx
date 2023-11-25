@@ -1,11 +1,11 @@
 var typed = new Typed(".multiple-text", {
-  strings: ["Estudante", "Apaixonado por Tecnologia", "Desenvolvedor Front-End", "Futuro Analista de Sistemas"],
+  strings: ["Apaixonardo por Saionara, Vendedor Fudido"],
   typeSpeed: 100,
   backSpeed: 70,
   backDelay: 1000,
   loop: true
 });
-
+// Estudante", "Apaixonado por Tecnologia", "Desenvolvedor Front-End", "Futuro Analista de Sistemas
 
 const inputName = document.getElementById("inputName");
 const inputComment = document.getElementById("inputComment");

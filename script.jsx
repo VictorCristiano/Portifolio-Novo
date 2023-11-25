@@ -1,5 +1,5 @@
 var typed = new Typed(".multiple-text", {
-  strings: ["Apaixonardo por Saionara, Vendedor Fudido"],
+  strings: ["Apaixonado por Saionara, Vendedor Fudido"],
   typeSpeed: 100,
   backSpeed: 70,
   backDelay: 1000,

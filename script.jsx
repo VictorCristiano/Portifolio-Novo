@@ -21,6 +21,7 @@ form.addEventListener('submit', (event)=>{
   inputComment.value='';
 })
 
+
 // toggle icon
 
 let menuIcon = document.querySelector("#menu-icon")

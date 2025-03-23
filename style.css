@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   border: none;
   outline: none;
@@ -54,9 +54,15 @@ header.sticky {
   font-size: 2.5rem;
   color: var(--sc);
   font-weight: 600;
-  cursor: default;
+  cursor: pointer;
   opacity: 0;
   animation: slideRight 1s ease forwards;
+}
+
+.logo:hover {
+  color: var(--tc);
+  font-size: 2.6rem;
+  transition: 0.5s;
 }
 
 .navbar a {
@@ -69,7 +75,7 @@ header.sticky {
   animation: slideTop 0.5s ease forwards;
   animation-delay: calc(0.2s * var(--i));
 }
-.active{
+.active {
   color: var(--tc);
 }
 .navbar a:hover,
@@ -123,10 +129,11 @@ span {
   transition: 0.3s;
   border-bottom: var(--tc) solid 0.3125rem;
   border-radius: 50%;
-  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+  animation:
+    zoomIn 1s ease forwards,
+    floatImage 4s ease-in-out infinite;
   animation-delay: 0.2s;
   transition: 0.3s;
-  
 }
 
 .home-img img:hover {
@@ -203,7 +210,9 @@ span {
   transition: 0.3s;
   border-bottom: var(--tc) solid 0.3125rem;
   border-radius: 50%;
-  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+  animation:
+    zoomIn 1s ease forwards,
+    floatImage 4s ease-in-out infinite;
   animation-delay: 0.2s;
   transition: 0.3s;
   margin: 2rem;
@@ -292,11 +301,11 @@ span {
 }
 
 .portfolio-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .portfolio-container .portfolio-box {
@@ -387,13 +396,13 @@ span {
   flex-wrap: wrap;
 }
 
-input:focus-within{
+input:focus-within {
   border: solid 1px var(--tc);
-  transition: .5s ease-in;
+  transition: 0.5s ease-in;
   box-shadow: 0 0 1rem var(--tc);
 }
-textarea:focus-within{
-  transition: .5s ease-in;
+textarea:focus-within {
+  transition: 0.5s ease-in;
   box-shadow: 0 0 1rem var(--tc);
   border: solid 1px var(--tc);
 }
@@ -426,7 +435,6 @@ textarea:focus-within{
   gap: 2rem;
   background: var(--bg);
   margin-bottom: 1rem;
-  
 }
 .postComments h2 {
   margin-top: 3rem;
@@ -461,10 +469,10 @@ textarea:focus-within{
 .footer-text p {
   font-size: 1.2rem;
 }
-.icone-irtopo{
+.icone-irtopo {
   display: flex;
   justify-content: right;
-  margin:  0 5rem;
+  margin: 0 5rem;
   transform: translateY(-50%);
 }
 .icone-irtopo a {
@@ -475,7 +483,6 @@ textarea:focus-within{
   border-radius: 50%;
   background: var(--tc);
   transition: 0.5s ease;
-
 }
 .icone-irtopo a:hover {
   box-shadow: 0 0 1rem var(--tc);
@@ -485,9 +492,6 @@ textarea:focus-within{
   font-size: 1.6rem;
   color: var(--bg);
 }
-
-
-
 
 /* KEY FRAMES ANIMATIONS */
 
@@ -569,7 +573,7 @@ textarea:focus-within{
   .header {
     padding: 2rem 3%;
   }
-  #home{
+  #home {
     padding: 2rem 3%;
     flex-direction: column-reverse;
   }
@@ -580,15 +584,14 @@ textarea:focus-within{
     padding: 2rem 3%;
     flex-direction: column;
   }
-  #img-about img{
+  #img-about img {
     scale: 0.7;
   }
-  
-  #portfolio{
+
+  #portfolio {
     align-content: center;
     overflow: hidden;
   }
-
 
   .footer {
     padding: 2rem 3%;
@@ -615,7 +618,7 @@ textarea:focus-within{
     justify-content: space-around;
     align-items: center;
     transform: translateX(100%);
-    transition: .5s ease-in;
+    transition: 0.5s ease-in;
     border-radius: 3px;
   }
   .navbar.active {
